@@ -1,0 +1,14 @@
+import Post from './Post';
+import '../style/style.css';
+import json from '../assets/json.json';
+import logoPazzl from '../assets/logopazzle.png';
+import xmlFile from '../assets/mailData.xml';
+import csvfile from '../assets/dataCSV.csv';
+import * as $ from 'jquery';
+const post = new Post('Package Post', logoPazzl);
+console.log(post);
+console.log(post.toString1());
+console.log('JSON =>', json);
+console.log('XML-FAIL: -> ', xmlFile);
+console.log('CSV  -> ', csvfile);
+$('pre').html(post.toString1());
