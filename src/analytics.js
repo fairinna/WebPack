@@ -1,14 +1,15 @@
+import * as $ from 'jquery';
 function analytics() {
   let counter = 0;
   let isDestroyed = false;
 
   const listen = () => counter++;
 
-  document.addEventListener('click', listen);
+  $(document).on('click', listen);
 
   return {
     destroyAnalytics() {
-      document.removeEventListener('click', listen);
+      $(document).off('click', listen);
       isDestroyed = true;
     },
 

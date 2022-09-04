@@ -1,4 +1,4 @@
-import Post from './Post';
+import Post from '@models/Post';
 import '../style/style.css';
 import json from '../assets/json.json';
 import logoPazzl from '../assets/logopazzle.png';
